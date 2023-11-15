@@ -1,0 +1,18 @@
+#img-wrapper{
+    background-color: seashell;
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+} 
+.img2:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+}
+.img3:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+}
