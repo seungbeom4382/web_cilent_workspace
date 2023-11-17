@@ -13,11 +13,12 @@
   font-family: consolas, monospace;
 }
 #font2 {
-  /* font-family: 'Dongle', sans-serif;
-  font-size: 48px;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 48px; */
+  /* font-family: 'Dongle', sans-serif; */
+  /* font-size: 48px; */
+  /* 300(light) 400(regular) 700(bold) */
+  /* font-weight: bold;  */
+  /* font-style: italic; */
+  /* line-height: 48px;  */
   /* 모아쓰기 shorthand */
   /* font: font-style font-weight font-size/line-height font-family */
   font: italic bold 48px/48px 'Dongle', sans-serif;
