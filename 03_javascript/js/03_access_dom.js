@@ -92,7 +92,7 @@ function test1() {
   const name = inputs[0];
 
   console.log(inputs);
-  console.dir(name);
+  console.dir(name); 
   alert(name.value);
 }
 

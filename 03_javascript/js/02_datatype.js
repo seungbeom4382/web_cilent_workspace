@@ -10,7 +10,7 @@
  * 4. boolean
  * 5. array
  * 6. object
- * 7. function
+ * 7. function 
  */
 function testType() {
     // 지역
