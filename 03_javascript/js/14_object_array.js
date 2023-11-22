@@ -63,6 +63,7 @@ const test1 = () => {
     this.age = age;
     this.colors = colors;
     this.bark = function(){
+      // 자기 this가 없어 부모의 this(생성자함수의 this(현재객체))를 가져다 쓴다.
       return this.weight < 10 ? "왈왈" : "멍멍";
     };
   }

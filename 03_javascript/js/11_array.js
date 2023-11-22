@@ -281,7 +281,7 @@ function test1() {
     const sum = arr.reduce(function(agg, n, i, _arr){
       console.log(agg, n, i, _arr);
       return agg + n;
-    });
+    }, 0);
     console.log(sum); 
   
     // 홀수배열 생성 

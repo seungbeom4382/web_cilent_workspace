@@ -36,8 +36,8 @@ const test1 = () => {
     console.log(obj.hobby);
     console.log(obj.hobby[0]);
     console.log(obj.pet.name);
-    // console.log(obj.123);
-    // console.log(obj.user-name);
+    // console.log(obj.123); (x)
+    // console.log(obj.user-name); (x)
   
     // 문자열로 속성명 작성!!
     console.log(obj['id']);
@@ -80,6 +80,11 @@ const test1 = () => {
       // 메소드 단축문법(일반함수)
       eat(food){
         console.log(`${this.username}이/가 ${food}를 먹는다.`);
+      },
+      work:() => {
+        // 객체안 화살표함수는 지양할 것.
+        console.log(this); // window
+        console.log(`${this.username}이/가 일한다~`); // undefined이/가 일한다~
       }
     };
   
@@ -89,6 +94,8 @@ const test1 = () => {
   
     user['run']();
     user['eat']('🥘');
+
+    user.work();
   };
   
   
@@ -134,7 +141,7 @@ const test1 = () => {
     };
   
     // for..in
-    for(prop in obj){
+    for(prop in obj){ // 속성명을 이용해 속성값 찾기
       console.log(prop, obj[prop]);
     }
   
