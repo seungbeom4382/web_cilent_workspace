@@ -53,11 +53,13 @@ const test1 = () => {
   Truck.prototype.constructor = Truck;
   
   
-  /**
+  /** 중요 **
    * this binding 함수
    * - apply(this객체, [...params]) 호출
    * - call(this객체, ...params) 호출
    * - bind(this객체) 바인딩후 함수 반환
+   * 
+   * 화살표함수는 this를 재바인딩 할 수 없다.
    */
   const test3 = () => {
     const foo = function(a, b){
@@ -69,7 +71,7 @@ const test1 = () => {
     const obj = {
       id : 'honggd1234'
     };
-    // foo.apply(obj, [10, 20]);
+    // foo.apply(obj, [10, 20]); 매개인자를 배열로 전달
     // foo.call(obj, 10, 20);
   
     const foo2 = foo.bind(obj);

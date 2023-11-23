@@ -70,7 +70,7 @@ const test1 = () => {
     // const b = obj.b;
     // const c = obj.c;
   
-    // const {a, b, c} = obj;
+    // const {a, b, c} = obj; <- 간결하게 쓰는 문법
     // const {a, b} = obj;
     // const {b, a} = obj;
     const {a, b, x = 'ㅋㅋㅋ'} = obj;
@@ -163,7 +163,7 @@ const test1 = () => {
   교육원명 : ${name}
   홈페이지 : ${url}
   전화번호 : ${tel1}(대표) , ${tel2}
-  ${Object.keys(branches).reduce((result, branchName, index) => {
+  ${Object.keys(branches).reduce((result, branchName, index) => { // 배열.reduce
     return result += `지점${index + 1} : ${branchName}(${branches[branchName]['addr']})\n`
   }, "")}`);
   
