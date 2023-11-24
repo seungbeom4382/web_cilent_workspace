@@ -30,7 +30,6 @@ const test1 = () => {
     console.log(history);
   };
   
-  
   /**
    * screen
    * - 브라우져가 실행중인 모니터에 대한 정보제공
