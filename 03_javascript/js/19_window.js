@@ -117,5 +117,5 @@ const test1 = () => {
   };
   
   const displayClock = () => document.querySelector("#clock-display").innerHTML = clock();  
-  displayClock();
+  displayClock(); // 처음부터 실행시키기 위해
   setInterval(displayClock, 1000);
