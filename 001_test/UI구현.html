@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI | 구현</title>
+    <style>
+    body{
+        background-color: rgb(170, 205, 220);
+    }
+    #form{
+        background-color: rgb(240, 238, 237);
+        width: 400px;
+    }
+    .line{
+        background-color: rgb(240, 238, 237);
+        border: none;
+        border-width: 0 0 1px;
+        border-style: dashed;
+    }
+    .sign{
+        background-color: rgb(177, 238, 177);
+        border-color: white;
+        width: 300px;
+        height: 40px;
+    }
+    </style>
+</head>
+<body>
+    <div id = "form">
+        <fieldset>
+            <label for="id">아이디&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input
+                type="text"
+                name="id"
+                id="id"
+                class="line"
+                required>
+            <br><br>
+            <label for="password">패스워드&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input
+                type="text"
+                name="password"
+                id="password"
+                class="line"
+                required>
+            <br><br>
+            <label for="passwordCheck">패스워드 확인&nbsp</label>
+                <input
+                type="text"
+                name="passwordCheck"
+                id="passwordCheck"
+                class="line"
+                required>
+            <br><br>
+            <label for="email">이메일&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input
+                type="text"
+                name="email"
+                id="email"
+                class="line">
+            </label>
+            <br><br>
+            <label for="address">주소&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input
+                type="text"
+                name="address"
+                id="address"
+                class="line">
+                <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input
+                type="text"
+                name="address"
+                id="address"
+                class="line">
+            <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value="가 입" class="sign">   
+        </fieldset>
+    </div>
+    <script src="js/UI구현.js"></script>
+</body>
+</html>

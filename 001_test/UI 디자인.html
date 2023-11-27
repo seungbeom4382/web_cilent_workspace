@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI | 디자인</title>
+    <style>
+        table, th{
+            border: 1px solid black;
+        }
+        thead,tfoot{
+            background-color: rgb(239, 127, 86);
+            color: aliceblue;
+        }
+        tbody{
+            background-color: antiquewhite;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>포트폴리오 문제</h1>
+    <hr>
+    <form action="insert.no" method="post">
+        <fieldset>
+            <legend>공지사항 작성하기</legend>
+                <label for="title">제목 </label>
+                    <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="제목을 입력하시오."
+                    required>
+                <br>
+                <label for="text">내용 </label>
+                    <input
+                    type="text"
+                    name="content"
+                    id="content"
+                    placeholder="내용을 입력하시오."
+                    required>
+                <br>
+                <div>
+                    <label for="uploadFile">첨부파일</label>
+                    <input type="file" name="uploadFile" id="uploadFile">
+                </div>
+            <input type="submit" value="작성하기">
+        </fieldset>
+        <br>
+    </form>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th colspan="2">제목</th>
+                <th width="100">작성자</th>
+                <th width="100">작성일</th>
+                <th>조회수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <t>
+                <th>9</th>
+                <th width="400">공지사항 제목 9</th>
+                <th><input type="submit" value="바로가기"></th>
+                <th>user01</th>
+                <th>2021-03-29</th>
+                <th>34</th>
+            </t>
+            <tr>
+                <th>6</th>
+                <th>공지사항 제목 6</th>
+                <th><input type="submit" value="바로가기"></th>
+                <th>answ445</th>
+                <th>2021-03-12</th>
+                <th>67</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>공지사항 제목 3</th>
+                <th><input type="submit" value="바로가기"></th>
+                <th>testg12</th>
+                <th>2021-03-01</th>
+                <th>98</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>공지사항 제목 2</th>
+                <th><input type="submit" value="바로가기"></th>
+                <th>palwe3</th>
+                <th>2021-01-02</th>
+                <th>85</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>공지사항 제목 1</th>
+                <th><input type="submit" value="바로가기"></th>
+                <th>xml23</th>
+                <th>2020-12-24</th>
+                <th>124</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">전체공지사항 갯수</th>
+                <th colspan="2">5개</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
