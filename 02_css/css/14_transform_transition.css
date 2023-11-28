@@ -17,7 +17,7 @@
     transform: scale(.7)
   }
   /* 회전 rotate(n deg) */
-  .wrapper img:last-child {
+  .wrapper img:last-child:hover {
     transform: rotate(270deg);
   }
   

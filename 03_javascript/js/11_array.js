@@ -24,7 +24,6 @@ function test1() {
     console.log((student[1][0] + student[2][0]) / 2);
   }
   
-  
   /**
    * 반복문
    * - for문
