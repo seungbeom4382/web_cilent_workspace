@@ -40,7 +40,7 @@ function getByTag(){
 function getByClass(){
   const group1 = document.getElementsByClassName("group1");
   // const groups = document.getElementsByClassName("group1 group2");
-  console.log(group1, typeof groupt1);
+  console.log(group1, typeof group1);
 
   // Hello JS 1 [GROUP1]
   for(let i = 0; i < group1.length; i++) {
