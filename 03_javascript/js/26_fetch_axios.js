@@ -5,6 +5,10 @@
  * - json응답에 대한 처리
  *  - json이란? javascript object notation, 프로그램간의 데이터교환언어(약속)
  *  - {"id":"shqkel","company":"KH정보교육원","classroom":"352","cnt":15}
+ *  - 속성명은 반드시 쌍따옴표로 감싼다.
+ *  - 문자열은 반드시 쌍따옴표로 감싼다.
+ *  - 숫자/ boolean/ null은 그대로 작성
+ *  - 객체/ 배열 사용가능
  * 
  */
 document.querySelector("#btn1").addEventListener('click', () => {
@@ -87,3 +91,35 @@ document.querySelector("#btn1").addEventListener('click', () => {
       })
   
   });
+
+  /**
+ * API KEY와 함께 전송하기
+ * - 보통 API는 전송량 제한을 위해 key값을 가지고 요청하게 된다. 
+ * - http요청 헤더부분에 지정한 헤더명으로 등록해야 한다.
+ */
+document.querySelector("#btn5").addEventListener('click', () => {
+  const url = 'https://api.thecatapi.com/v1/images/search';
+
+  // axiso(url, options)
+  axios(url, {
+    headers : {
+      'x-api-key' : '202de7b9-d66f-4322-a946-75c4119ae02d'
+    },
+    params : {
+      limit : 1 // 기본값
+    }
+  })
+  .then(({data : [{ url }]}) => {
+    // response > data > [{ url }] 
+    console.log(url);
+
+    // .cat-wrapper > img
+    const img = document.createElement('img');
+    img.src = url;
+    img.style = 'width: 300px; border-radius: 50%;';
+
+    const wrapper = document.querySelector('.cat-wrapper');
+    wrapper.innerHTML = '';
+    wrapper.append(img);
+  })
+});
