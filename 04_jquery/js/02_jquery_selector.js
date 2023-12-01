@@ -1,4 +1,4 @@
-$("#btn1").on('click', () => {
+$(btn1).on('click', () => {
     console.log('🍖');
   
     console.log($); // jquery함수
@@ -43,11 +43,10 @@ $("#btn1").on('click', () => {
   
   
     // js객체를 전달해서 jquery객체 생성
-    console.log($(document.querySelector("#p1")));
+    console.log($(document.querySelector("#p1"))); // $("#p1")
     console.log($(p1));
     console.log($([p1, p2, p3]));
   });
-  
   
   /**
    * jquery전용 선택자 
